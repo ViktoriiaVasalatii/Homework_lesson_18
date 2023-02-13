@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Generate List</title>
+    <style>
+    body {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding: 12px;
+    }
+    .list {
+        padding: 0 10px;
+    }
+    .list li {
+        list-style-type: none;
+    }
+    .list span {
+        cursor: pointer;
+        position: relative;
+    }
+    .list span::before {
+        content: '-';
+        font-weight: bold;
+        position: absolute;
+        left: -10px;
+    }
+    .list span.hide::before {
+        content: '+';
+        font-weight: bold;
+        position: absolute;
+        left: -20px;
+    }
+    .list span.hide + ul {
+        display: none;
+    }
+</style>
+</head>
+<body style="display: flex; justify-content: center; align-content: center; flex-flow: column">
+    <button id="list-add">Додати список</button>
+<ul class="list">
+   <li>
+       <span>Перший список</span>
+       <ul>
+           <li>1 елемент списку</li>
+           <li>2 елемент списку</li>
+           <li>3 елемент списку</li>
+           <li>4 елемент списку</li>
+       </ul>
+   </li>
+   <li>
+       <span>Другий список</span>
+       <ul>
+           <li>5 елемент списку</li>
+           <li>6 елемент списку</li>
+           <li>7 елемент списку</li>
+           <li>8 елемент списку</li>
+       </ul>
+   </li>
+</ul>
+    <script src="script.js"></script>
+</body>
+</html>
