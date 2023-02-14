@@ -37,30 +37,37 @@
     .list span.hide + ul {
         display: none;
     }
+    .maybeRemove{
+        background-color: aquamarine;
+        margin-bottom: 20px;
+    }
 </style>
 </head>
 <body style="display: flex; justify-content: center; align-content: center; flex-flow: column">
-    <button id="list-add">Додати список</button>
+    <button id="list-add" style="margin-bottom: 15px">Додати список</button>
+    <button id="list-remove">Видалити список</button>
 <ul class="list">
    <li>
        <span>Перший список</span>
-       <ul>
+       <ul >
            <li>1 елемент списку</li>
-           <li>2 елемент списку</li>
-           <li>3 елемент списку</li>
+           <!-- <li>2 елемент списку</li>
+           <li>3 елемент списку</li> -->
            <li>4 елемент списку</li>
        </ul>
    </li>
-   <li>
+   <li class="maybeRemove">
        <span>Другий список</span>
-       <ul>
+       <ul >
            <li>5 елемент списку</li>
-           <li>6 елемент списку</li>
-           <li>7 елемент списку</li>
+           <!-- <li>6 елемент списку</li>
+           <li>7 елемент списку</li> -->
            <li>8 елемент списку</li>
        </ul>
    </li>
 </ul>
+<h1 class="maybeRemove"> srtgth </h1>
+
     <script src="script.js"></script>
 </body>
 </html>

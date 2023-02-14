@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Слайдер базовий</title>
+    <style>
+      html,
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+      }
+      div {
+        background: url("images/1.jfif") no-repeat center;
+        min-width: 50%;
+        min-height: 50%;
+        border-radius: 3%;
+      }
+      .image1 {
+        background: url("images/1.jfif") no-repeat center;
+      }
+      .image2 {
+        background: url("images/2.jfif") no-repeat center;
+      }
+      .image3 {
+        background: url("images/3.jfif") no-repeat center;
+      }
+      .image4 {
+        background: url("images/4.jfif") no-repeat center;
+      }
+      .image5 {
+        background: url("images/5.jfif") no-repeat center;
+      }
+      .image6 {
+        background: url("images/6.jfif") no-repeat center;
+      }
+      .image7 {
+        background: url("images/7.jfif") no-repeat center;
+      }
+      .button_pre {
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 50px;
+        text-align: center;
+        background-color: #0a0a23;
+        color: #fff;
+        border: none;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      .button_pre_hide {
+        display: none;
+        left: 0;
+      }
+      .button_next {
+        position: absolute;
+        top: 25%;
+        left: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 50px;
+        text-align: center;
+        background-color: #0a0a23;
+        color: #fff;
+        border: none;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      .button_next_hide {
+        display: none;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button_pre">Pre</button>
+    <div id="image"></div>
+    <button class="button_next">Next</button>
+    <script src="script.js"></script>
+  </body>
+</html>

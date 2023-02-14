@@ -5,11 +5,11 @@ list.addEventListener('click', function (event) {
         trigger.classList.toggle('hide');
     }
 });
-const mapLetterToNumber = ["Третій", "Четвертий", "П'ятий", "Шостий", "Сьомий", "Восьмий", "Дев'ятий", "Десятий"];
 
-const listAdd = document.querySelector('#list-add');
+const mapLetterToNumber = ["Третій", "Четвертий", "П'ятий", "Шостий", "Сьомий", "Восьмий", "Дев'ятий", "Десятий"];
 let counterUl = 0;
 let valueLi = 8;
+const listAdd = document.querySelector('#list-add');
 listAdd.addEventListener('click', function (event) {
     if (counterUl < 8) {
         const li = document.createElement('li');
@@ -22,7 +22,18 @@ listAdd.addEventListener('click', function (event) {
                 `<li>${++valueLi} елемент списку</li>` +
                 `<li>${++valueLi} елемент списку</li>` +
                 `</ul>`
+            li.setAttribute("class", "maybeRemove");
             list.appendChild(li);
     }
     counterUl++
 })
+const remove = document.querySelector('.maybeRemove');
+const listRemove = document.querySelector('#list-remove');
+// remove.addEventListener('dblclick', function(event){
+    listRemove.addEventListener('dblclick', function(event){
+    // console.log("li");
+remove.remove();
+})
+
+
+// Advanced: зробити видалення списку і врахувати коректність нумерації після видалення.
