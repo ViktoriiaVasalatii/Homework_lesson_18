@@ -13,16 +13,23 @@ let button_next = document.querySelector(".button_next");
 let counter = 4;
 
 button_pre.addEventListener("click", function (event) {
-    let img = imageFromFolder[--counter];
-    image.classList.toggle(`${img}`);
-    if(counter == 1){
+    button_next.classList.remove("button_next_hide")
+    if (counter > 1) {
+        image.classList.remove(`${imageFromFolder[counter]}`);
+        image.classList.add(`${imageFromFolder[--counter]}`);
+    }
+    if (counter == 1) {
         button_pre.classList.toggle("button_pre_hide")
     }
 });
+
 button_next.addEventListener("click", function (event) {
-    let img = imageFromFolder[++counter];
-    image.classList.toggle(`${img}`);
-    if(counter == 7){
+    button_pre.classList.remove("button_pre_hide")
+    if (counter < 7) {
+        image.classList.remove(`${imageFromFolder[counter]}`);
+        image.classList.add(`${imageFromFolder[++counter]}`);
+    }
+    if (counter == 7) {
         button_next.classList.toggle("button_next_hide")
     }
 });
