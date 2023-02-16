@@ -1,0 +1,70 @@
+.wrapper{
+    /* background-color:blueviolet; */
+    display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* flex-direction: column;
+    align-items: center; */
+    /* justify-content:space-around; */
+
+    
+}
+.hide{
+    display: none;
+}
+.category_block{
+    background-color: red;
+    margin-right: 10px;
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+
+    /* display: flex;  */
+    /* justify-content: left; */
+
+}
+
+.category_items{
+    cursor: pointer;
+}
+
+.goods_block{
+    background-color: yellow;
+    margin-right: 10px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    /* display: flex; */
+    /* justify-content: right; */
+}
+
+.goods_block_phone{
+    background-color: azure;
+    margin: 5px;
+}
+
+.goods_block_headphones{
+    background-color: azure;
+    margin: 5px;
+}
+
+.goods_block_accessories{
+    background-color: azure;
+    margin: 5px;
+}
+
+.goods_item{
+    cursor: pointer;
+}
+.about_goods_block{
+    background-color: green;
+    width: 500px;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; */
+}
+
